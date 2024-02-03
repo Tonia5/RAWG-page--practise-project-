@@ -1,0 +1,9 @@
+<button class="btn btn-primary" (click)="getGames()">Get Games</button>
+<div class="row">
+  @for(game of gamesList.results; track $index) {
+  <div class="col-4">
+    <app-game [gamedetails]="game"> </app-game>
+  </div>
+
+  }
+</div>

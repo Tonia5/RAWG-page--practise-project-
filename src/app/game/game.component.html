@@ -1,0 +1,21 @@
+<div
+  class="card"
+  style="
+    background-color: black;
+    color: white;
+    border-color: white;
+    margin: 5px;
+  "
+>
+  <img
+    [src]="gamedetails.background_image"
+    class="card-img-top"
+    height="200px"
+    alt="..."
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ gamedetails.name }}</h5>
+    <p class="card-text">Rating: {{ gamedetails.rating }}</p>
+    <p class="card-text">Votes: {{ gamedetails.suggestions_count }}</p>
+  </div>
+</div>
